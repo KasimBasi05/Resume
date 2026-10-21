@@ -1,81 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Kasim Baasith - Resume</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasim Baasith - Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    color: #1a1a2e;
+    background: #fff;
+    padding: 32px 48px;
+    line-height: 1.5;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header { text-align: center; margin-bottom: 10px; }
+  .header h1 { font-size: 28px; font-weight: 700; letter-spacing: 1px; color: #1a1a2e; }
+  .header .role { font-size: 13.5px; color: #1A73E8; font-weight: 600; margin: 3px 0 6px; }
+  .contact { font-size: 12px; color: #444; }
+  .contact a { color: #1A73E8; text-decoration: none; }
+
+  /* DIVIDER */
+  hr { border: none; border-top: 2px solid #1A73E8; margin: 10px 0; }
+
+  /* SECTION */
+  .section { margin-bottom: 11px; }
+  .section h2 {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #1A73E8;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    border-bottom: 1px solid #c8d8f8;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+  }
+
+  /* OBJECTIVE */
+  .objective p { font-size: 12.5px; color: #333; }
+
+  /* EDUCATION */
+  .edu-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-title { font-weight: 600; font-size: 13px; }
+  .edu-year { font-size: 12px; color: #555; }
+  .edu-college { font-size: 12px; color: #555; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }
+  .skill-row { font-size: 12.5px; }
+  .skill-row span { font-weight: 600; color: #1A73E8; }
+
+  /* PROJECTS */
+  .project { margin-bottom: 7px; }
+  .project-title { font-weight: 600; font-size: 13px; color: #1a1a2e; }
+  .project-tech { font-size: 11.5px; color: #1A73E8; font-style: italic; }
+  .project p { font-size: 12px; color: #333; margin-top: 2px; }
+
+  /* PLAIN TEXT */
+  .plain { font-size: 12.5px; color: #333; }
+</style>
 </head>
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div class="header">
+  <h1>Kasim Baasith A</h1>
+  <div class="role">AI/ML Engineer (Aspiring) &nbsp;·&nbsp; Python Developer</div>
+  <div class="contact">
+    📧 kasimbaasith@gmail.com &nbsp;|&nbsp; 📱 +91 9943432345 &nbsp;|&nbsp;
+    <a href="https://github.com/KasimBasi05/">github.com/KasimBasi05</a> &nbsp;|&nbsp;
+    <a href="https://linkedin.com/in/kasim-baasith-a-253956273">LinkedIn</a>
+  </div>
+</div>
 
-    <div class="header">
-        <h1>Kasim Baasith A</h1>
-        <div class="contact">
-            <p>📧 kasimbaasith@gmail.com |📱 +91 9943432345</p>
-            <p>GitHub: github.com/KasimBasi05/</p>
-            <p>LinkedIn: linkedin.com/in/kasim-baasith-a-253956273</p>
-        </div>
+<hr>
+
+<!-- CAREER OBJECTIVE -->
+<div class="section objective">
+  <h2>Career Objective</h2>
+  <p>A final-year B.Tech IT student aspiring to build a career as an <strong>AI/ML Engineer</strong>, focused on developing intelligent systems and data-driven solutions. Eager to apply machine learning, deep learning, and Python skills to real-world problems through hands-on industry experience.</p>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <h2>Education</h2>
+  <div class="edu-row">
+    <span class="edu-title">B.Tech – Information Technology</span>
+    <span class="edu-year">Expected Graduation: 2027</span>
+  </div>
+  <div class="edu-college">Info Institute of Engineering</div>
+</div>
+
+<!-- TECHNICAL SKILLS -->
+<div class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-row"><span>Languages:</span> Python, HTML, CSS, JavaScript</div>
+    <div class="skill-row"><span>ML Libraries:</span> Pandas, NumPy, Matplotlib, Scikit-learn</div>
+    <div class="skill-row"><span>AI/ML:</span> Machine Learning, Deep Learning (basics), NLP (basics)</div>
+    <div class="skill-row"><span>Gen AI & Cloud:</span> Generative AI, Oracle Cloud, Google Cloud</div>
+    <div class="skill-row"><span>Tools:</span> Git & GitHub, Jupyter Notebook</div>
+    <div class="skill-row"><span>Databases:</span> MySQL</div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <div class="project-title">Emotion Detection using Sentiment Analysis
+      <span class="project-tech"> · Python, NLP</span>
     </div>
+    <p>Built a sentiment analysis model to detect emotions from text input using Python and NLP techniques.</p>
+  </div>
 
-    <section>
-        <h2>Career Objective</h2>
-        <p>
-            A final year B.Tech IT student seeking a Python with AI internship to apply programming skills and gain hands-on industry experience in artificial intelligence and software development.
-            Seeking opportunities to enhance my technical skills and contribute to innovative projects.
-        </p>
-    </section>
+  <div class="project">
+    <div class="project-title">Soil Health Card
+      <span class="project-tech"> · Python, Web Application</span>
+    </div>
+    <p>Developed a web-based soil health monitoring system that analyses soil parameters and generates health reports to assist farmers in making informed agricultural decisions.</p>
+  </div>
 
-    <section>
-        <h2>Education</h2>
+  <div class="project">
+    <div class="project-title">Student Performance Analyzer
+      <span class="project-tech"> · Python, ML, Web Application</span>
+    </div>
+    <p>Built a machine learning-based application to analyse and predict student academic performance based on key indicators, helping educators identify students who need support.</p>
+  </div>
 
-        <h3>B.Tech Information Technology - Final Year</h3>
-        <p>Info Institute of Engineering</p>
-        <p>Expected Graduation: 2027</p>
-    </section>
+  <div class="project">
+    <div class="project-title">Music App
+      <span class="project-tech"> · Web Application</span>
+    </div>
+    <p>Designed and built a responsive music streaming web application with a clean UI.</p>
+  </div>
+</div>
 
-    <section>
-        <h2>Technical Skills</h2>
+<!-- SOFT SKILLS -->
+<div class="section">
+  <h2>Soft Skills</h2>
+  <p class="plain">Communication &nbsp;·&nbsp; Teamwork &nbsp;·&nbsp; Quick Learner &nbsp;·&nbsp; Adaptability &nbsp;·&nbsp; Problem Solving</p>
+</div>
 
-        <ul>
-            <li>Languages:  Python, HTML, CSS, JavaScript</li>
-            <li>Libraries & Tools:  Pandas, NumPy, Matplotlib, Git & GitHub (learning)</li>
-            <li>AI & Cloud:  Generative AI (basics), Oracle Cloud (basics), Google Cloud (basics)</li>
-            <li> Databases:  MySQL (basics)</li>
-        </ul>
-
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <p>Emotion Detection using Sentiment Analysis - Python</p>
-        <p>Movie Recommendation Database - DBMS with Web Application</p>
-        <p>Music App - Web Application</p>
-
-    </section>
-
-    <section>
-        <h2>Soft Skills</h2>
-
-        <ul>
-            <li>Communication</li>
-            <li>Teamwork</li>
-            <li>Quick Learner</li>
-            <li>Adaptability</li>
-        </ul>
-
-    </section>
-
-     <section>
-        <h2>Languages</h2>
-
-        <ul>
-            <li>Tamil | English</li>
-        </ul>
-
-    </section>
-
+<!-- LANGUAGES -->
+<div class="section">
+  <h2>Languages Known</h2>
+  <p class="plain">Tamil &nbsp;·&nbsp; English</p>
 </div>
 
 </body>
